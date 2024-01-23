@@ -171,16 +171,12 @@ header.active {
 
 .hero-info {
   margin: 0;
-  min-height: 90vh;
   width: 100%;
-  background-color: white;
-  left:0;
-  background-image: url('images/vecteezy_workers-working-in-a-roof_.webp');
-  background-position-y: center;
-  background-position-x: 20%;
+  background-image: url(images/2211.i402.026.S.m004.c13.Roof\ flat\ composition.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
+  background-position: top;
+  left:0;
 }
 
 
@@ -190,10 +186,12 @@ header.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 
-
+.call-button2 {
+  display: none;
+}
 
 .hero-info h1 {
   text-align: center;
@@ -228,7 +226,7 @@ header.active {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: #CAE8F3;
+  background-color: #E7F4FA;
   border-left: 2px solid #473198;
   right: -8px;
   animation: cursor .8s 1s infinite, typing 20s  infinite;
@@ -237,11 +235,18 @@ header.active {
 
 
 @media (min-width: 1126px) {
+  .after-hero {
+    display: none;
+  }
+  .call-button2 {
+    display: block;
+  }
   .hero-info {
     background-image: url('images/vecteezy_workers-working-in-a-roof_2.webp');
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
+    background-color: white;
   }
   .container {
     align-items: center;
@@ -289,7 +294,7 @@ header.active {
 }
 
 
-.call-button {
+.call-button, .call-button2{
   border: none;
   border-radius: 20px;
   font-size: clamp(1.8rem, 1.8rem, 2.13rem);
@@ -298,7 +303,7 @@ header.active {
   height: clamp(7rem, 20vw, 9rem);
   text-align: center;
   background-color: #473198;
-  color: #D2E3C8;
+  color: white;
   cursor:pointer;
   
 }
@@ -312,6 +317,12 @@ header.active {
 
 
 .call-button:hover  {
+  background-color: #5a42b1;
+  color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
+}
+
+.call-button2:hover  {
   background-color: #5a42b1;
   color: white;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.493);
